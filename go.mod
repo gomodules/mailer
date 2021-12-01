@@ -8,7 +8,7 @@ require (
 	github.com/mailgun/mailgun-go/v4 v4.6.0
 	github.com/yuin/goldmark v1.4.4
 	gomodules.xyz/encoding v0.0.2
-	gomodules.xyz/gdrive-utils v0.0.0-20210829112507-325ac7ee9927
+	gomodules.xyz/gdrive-utils v0.0.1
 	google.golang.org/api v0.60.0
 	k8s.io/klog/v2 v2.30.0
 )
@@ -35,8 +35,8 @@ require (
 	github.com/spf13/cast v1.3.1 // indirect
 	go.opencensus.io v0.23.0 // indirect
 	golang.org/x/crypto v0.0.0-20200622213623-75b288015ac9 // indirect
-	golang.org/x/net v0.0.0-20210503060351-7fd8e65b6420 // indirect
-	golang.org/x/oauth2 v0.0.0-20211005180243-6b3c2da341f1 // indirect
+	golang.org/x/net v0.0.0-20211123203042-d83791d6bcd9 // indirect
+	golang.org/x/oauth2 v0.0.0-20211104180415-d3ed0bb246c8 // indirect
 	golang.org/x/sys v0.0.0-20211025201205-69cdffdb9359 // indirect
 	golang.org/x/text v0.3.6 // indirect
 	google.golang.org/appengine v1.6.7 // indirect
