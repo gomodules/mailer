@@ -44,7 +44,7 @@ type Mailer struct {
 
 	Subject string
 	Body    string
-	params  interface{}
+	Params  interface{}
 
 	AttachmentBytes map[string][]byte
 	GDriveFiles     map[string]string
@@ -85,7 +85,7 @@ func (m *Mailer) renderMail(src string, params interface{}) (string, string, err
 }
 
 func (m *Mailer) SendMail(mg mailgun.Mailgun, recipient, cc string, srv *drive.Service) error {
-	bodyText, bodyHtml, err := m.renderMail(m.Body, m.params)
+	bodyText, bodyHtml, err := m.renderMail(m.Body, m.Params)
 	if err != nil {
 		return err
 	}
