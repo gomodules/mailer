@@ -260,19 +260,19 @@ func (dc *DripCampaign) processStep(stepIndex int, step CampaignStep, c Contact)
 	return gocsv.MarshalCSV([]*Contact{&c}, w)
 }
 
-func (dc *DripCampaign) ListEmails() sets.String {
+func (dc *DripCampaign) ListAudiences() (sets.String, error) {
 	reader, err := gdrive.NewColumnReader(dc.SheetService, dc.SpreadsheetId, dc.SheetName, "email")
 	if err != nil {
-		panic(err)
+		return nil, err
 	}
 	cols, err := reader.ReadAll()
 	if err != nil {
-		panic(err)
+		return nil, err
 	}
 
 	emails := sets.NewString()
 	for _, row := range cols {
 		emails.Insert(row...)
 	}
-	return emails
+	return emails, nil
 }
