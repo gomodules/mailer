@@ -9,6 +9,7 @@ require (
 	github.com/yuin/goldmark v1.4.4
 	gomodules.xyz/encoding v0.0.2
 	gomodules.xyz/gdrive-utils v0.0.2
+	gomodules.xyz/sets v0.2.0
 	google.golang.org/api v0.60.0
 	k8s.io/klog/v2 v2.30.0
 )
