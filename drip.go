@@ -121,7 +121,7 @@ func (dc *DripCampaign) AddContact(c Contact) error {
 	return gocsv.MarshalCSV([]*Contact{&c}, w)
 }
 
-func RunCampaigns(ctx context.Context, dcs ...DripCampaign) error {
+func RunCampaigns(ctx context.Context, dcs ...*DripCampaign) error {
 	for _, dc := range dcs {
 		si, err := gdrive.NewSpreadsheet(dc.SheetService, dc.SpreadsheetId)
 		if err != nil {
