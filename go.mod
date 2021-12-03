@@ -9,7 +9,8 @@ require (
 	github.com/yuin/goldmark v1.4.4
 	gomodules.xyz/encoding v0.0.2
 	gomodules.xyz/gdrive-utils v0.0.2
-	gomodules.xyz/sets v0.2.0
+	gomodules.xyz/sets v0.2.1
+	gomodules.xyz/x v0.0.9
 	google.golang.org/api v0.60.0
 	k8s.io/klog/v2 v2.30.0
 )
@@ -21,7 +22,7 @@ require (
 	github.com/go-logr/logr v1.2.0 // indirect
 	github.com/golang/groupcache v0.0.0-20200121045136-8c9f03a8e57e // indirect
 	github.com/golang/protobuf v1.5.2 // indirect
-	github.com/google/uuid v1.1.2 // indirect
+	github.com/google/uuid v1.3.0 // indirect
 	github.com/googleapis/gax-go/v2 v2.1.1 // indirect
 	github.com/gorilla/mux v1.8.0 // indirect
 	github.com/huandu/xstrings v1.3.1 // indirect
@@ -30,8 +31,8 @@ require (
 	github.com/mitchellh/copystructure v1.0.0 // indirect
 	github.com/mitchellh/reflectwalk v1.0.0 // indirect
 	github.com/modern-go/concurrent v0.0.0-20180228061459-e0a39a4cb421 // indirect
-	github.com/modern-go/reflect2 v0.0.0-20180701023420-4b7aa43c6742 // indirect
-	github.com/pkg/errors v0.8.1 // indirect
+	github.com/modern-go/reflect2 v1.0.1 // indirect
+	github.com/pkg/errors v0.9.1 // indirect
 	github.com/shopspring/decimal v1.2.0 // indirect
 	github.com/spf13/cast v1.3.1 // indirect
 	go.opencensus.io v0.23.0 // indirect
@@ -44,4 +45,5 @@ require (
 	google.golang.org/genproto v0.0.0-20211021150943-2b146023228c // indirect
 	google.golang.org/grpc v1.40.0 // indirect
 	google.golang.org/protobuf v1.27.1 // indirect
+	gopkg.in/yaml.v2 v2.4.0 // indirect
 )
