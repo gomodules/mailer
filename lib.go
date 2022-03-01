@@ -177,12 +177,12 @@ func ExportPDF(srvDrive *drive.Service, docId, filename string) error {
 		return err
 	}
 	// filename := filepath.Join(gen.cfg.OutDir, FolderName(gen.cfg.Email), docName+".pdf")
-	err = os.MkdirAll(filepath.Dir(filename), 0755)
+	err = os.MkdirAll(filepath.Dir(filename), 0o755)
 	if err != nil {
 		return err
 	}
 	fmt.Println("writing file:", filename)
-	return ioutil.WriteFile(filename, buf.Bytes(), 0644)
+	return ioutil.WriteFile(filename, buf.Bytes(), 0o644)
 }
 
 func DownloadFile(srvDrive *drive.Service, docId, filename string) error {
@@ -197,10 +197,10 @@ func DownloadFile(srvDrive *drive.Service, docId, filename string) error {
 		return err
 	}
 	// filename := filepath.Join(gen.cfg.OutDir, FolderName(gen.cfg.Email), docName+".pdf")
-	err = os.MkdirAll(filepath.Dir(filename), 0755)
+	err = os.MkdirAll(filepath.Dir(filename), 0o755)
 	if err != nil {
 		return err
 	}
 	fmt.Println("writing file:", filename)
-	return ioutil.WriteFile(filename, buf.Bytes(), 0644)
+	return ioutil.WriteFile(filename, buf.Bytes(), 0o644)
 }
