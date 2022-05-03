@@ -21,6 +21,7 @@ import (
 	"fmt"
 	"io"
 	"io/ioutil"
+	"net"
 	"net/smtp"
 	"os"
 	"path/filepath"
@@ -41,6 +42,18 @@ import (
 type SMTPService struct {
 	Address string
 	Auth    smtp.Auth
+}
+
+func NewSMTPServiceFromEnv() (*SMTPService, error) {
+	addr := os.Getenv("SMTP_ADDRESS")
+	host, _, err := net.SplitHostPort(addr)
+	if err != nil {
+		return nil, err
+	}
+	return &SMTPService{
+		Address: addr,
+		Auth:    smtp.PlainAuth("", os.Getenv("SMTP_USERNAME"), os.Getenv("SMTP_PASSWORD"), host),
+	}, nil
 }
 
 type Mailer struct {
