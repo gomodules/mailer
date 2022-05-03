@@ -4,9 +4,11 @@ go 1.17
 
 require (
 	github.com/Masterminds/sprig/v3 v3.2.2
+	github.com/gabriel-vasile/mimetype v1.4.1-rc1
 	github.com/gocarina/gocsv v0.0.0-20211020200912-82fc2684cc48
-	github.com/mailgun/mailgun-go/v4 v4.6.0
+	github.com/pkg/errors v0.9.1
 	github.com/yuin/goldmark v1.4.4
+	gomodules.xyz/email v0.1.0
 	gomodules.xyz/encoding v0.0.2
 	gomodules.xyz/gdrive-utils v0.0.2
 	gomodules.xyz/sets v0.2.1
@@ -24,15 +26,10 @@ require (
 	github.com/golang/protobuf v1.5.2 // indirect
 	github.com/google/uuid v1.3.0 // indirect
 	github.com/googleapis/gax-go/v2 v2.1.1 // indirect
-	github.com/gorilla/mux v1.8.0 // indirect
 	github.com/huandu/xstrings v1.3.1 // indirect
 	github.com/imdario/mergo v0.3.11 // indirect
-	github.com/json-iterator/go v1.1.12 // indirect
 	github.com/mitchellh/copystructure v1.0.0 // indirect
 	github.com/mitchellh/reflectwalk v1.0.0 // indirect
-	github.com/modern-go/concurrent v0.0.0-20180228061459-e0a39a4cb421 // indirect
-	github.com/modern-go/reflect2 v1.0.2 // indirect
-	github.com/pkg/errors v0.9.1 // indirect
 	github.com/shopspring/decimal v1.2.0 // indirect
 	github.com/spf13/cast v1.3.1 // indirect
 	go.opencensus.io v0.23.0 // indirect
