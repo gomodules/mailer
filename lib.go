@@ -20,7 +20,6 @@ import (
 	"bytes"
 	"fmt"
 	"io"
-	"io/ioutil"
 	"net"
 	"net/smtp"
 	"os"
@@ -202,7 +201,7 @@ func ExportPDF(srvDrive *drive.Service, docId, filename string) error {
 		return err
 	}
 	fmt.Println("writing file:", filename)
-	return ioutil.WriteFile(filename, buf.Bytes(), 0o644)
+	return os.WriteFile(filename, buf.Bytes(), 0o644)
 }
 
 func DownloadFile(srvDrive *drive.Service, docId, filename string) error {
@@ -222,5 +221,5 @@ func DownloadFile(srvDrive *drive.Service, docId, filename string) error {
 		return err
 	}
 	fmt.Println("writing file:", filename)
-	return ioutil.WriteFile(filename, buf.Bytes(), 0o644)
+	return os.WriteFile(filename, buf.Bytes(), 0o644)
 }
